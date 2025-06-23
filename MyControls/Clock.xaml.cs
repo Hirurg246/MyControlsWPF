@@ -17,7 +17,7 @@ using System.Windows.Threading;
 
 namespace MyControls
 {
-    public partial class Clock : UserControl
+    public partial class Clock : UserControls
     {
         protected Timer Timer = new Timer(1000);
 
