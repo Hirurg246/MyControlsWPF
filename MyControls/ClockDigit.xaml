@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="MyControls.ClockDigit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Grid Width = "100" Height="210">
+
+                <Polygon x:Name="UPol" Points = "10, 0, 90, 0, 90, 10, 10, 10"/>
+
+                <Polygon x:Name="ULPol" Points = "0, 10, 10, 10, 10, 100, 0, 100"/>
+
+                <Polygon x:Name="URPol" Points = "90, 10, 100, 10, 100, 100, 90, 100"/>
+
+                <Polygon x:Name="MPol" Points = "10, 100, 90, 100, 90, 110, 10, 110"/>
+
+                <Polygon x:Name="LLPol" Points = "0, 110, 10, 110, 10, 200, 0, 200"/>
+
+                <Polygon x:Name="LRPol" Points = "90, 110, 100, 110, 100, 200, 90, 200"/>
+
+                <Polygon x:Name="LPol" Points = "10, 200, 90, 200, 90, 210, 10, 210"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</UserControl>

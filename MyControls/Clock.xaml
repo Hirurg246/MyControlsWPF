@@ -1,0 +1,28 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:MyControls" x:Class="MyControls.Clock"
+             >
+    <Grid>
+        <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Grid Width = "400" Height="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <local:ClockDigit x:Name="HTCD" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <local:ClockDigit x:Name="HOCD" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Polygon Grid.Column="1" Fill="Black" Points="20, 40, 25, 35, 30, 40, 25, 45"/>
+                <Polygon Grid.Column="1" Fill="Black" Points="20, 60, 25, 55, 30, 60, 25, 65"/>
+                <local:ClockDigit x:Name="MTCD" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <local:ClockDigit x:Name="MOCD" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Polygon Grid.Column="3" Fill="Black" Points="20, 40, 25, 35, 30, 40, 25, 45"/>
+                <Polygon Grid.Column="3" Fill="Black" Points="20, 60, 25, 55, 30, 60, 25, 65"/>
+                <local:ClockDigit x:Name="STCD" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <local:ClockDigit x:Name="SOCD" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</UserControl>
